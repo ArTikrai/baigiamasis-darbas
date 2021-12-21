@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
@@ -137,18 +141,48 @@
           <nav class="tab-navigation">
             <ul>
               <li data-target="register" class="active">
-                <span>Register</span>
+                <span>REGISTER</span>
               </li>
               <li data-target="apply">
-                <span>Apply</span>
+                <span>APPLY</span>
               </li>
               <li data-target="receive">
-                <span>Receive</span>
+                <span>RECEIVE</span>
               </li>
             </ul>
           </nav>
           <div data-tab="register" class="tab-content active">
-            Register content
+            <div class="register-text">
+              <h2>
+                Tabs with soft transitioning effect. Explained propriety of out
+                perpetual his you.
+              </h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates magnam corrupti necessitatibus alias illo quam eaque?
+                Harum recusandae, minima asperiores nemo aperiam deleniti saepe,
+                temporibus blanditiis illo impedit vero rem.
+              </p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+
+            <div class="register-images">
+              <img
+                class="about-images"
+                src="images/about2.jpg"
+                alt="random-photo"
+              />
+              <img
+                class="about-images"
+                src="images/about1.jpg"
+                alt="random-photo"
+              />
+              <img
+                class="about-image"
+                src="images/about3.jpg"
+                alt="random-photo"
+              />
+            </div>
           </div>
           <div data-tab="apply" class="tab-content">Apply content</div>
           <div data-tab="receive" class="tab-content">Receive content</div>
@@ -247,5 +281,7 @@
       <section></section>
     </main>
     <footer></footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

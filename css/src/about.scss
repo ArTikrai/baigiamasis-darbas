@@ -57,6 +57,49 @@
 
     &.active {
       display: block;
+      display: flex;
+    }
+
+    .register-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 54px;
+      padding-right: 130px;
+
+      h2 {
+        font-size: 3.6rem;
+        color: #ffffff;
+        padding-bottom: 30px;
+      }
+      p {
+        font-size: 1.4rem;
+        color: #ffffff;
+
+        &:not(:last-child) {
+          padding-bottom: 20px;
+        }
+      }
+    }
+    .register-images {
+      display: grid;
+      grid-template-columns: repeat(2, 167px);
+      grid-template-rows: repeat(1, 168px 174px);
+      gap: 20px;
+
+      .about-images {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .about-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        grid-column: 1/3;
+      }
     }
   }
 }

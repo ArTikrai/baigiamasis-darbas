@@ -128,11 +128,13 @@
     .radio-input-wrap {
       margin-bottom: 40px;
       input {
+        font-size: 9px;
         display: none;
       }
 
       input:checked ~ label:before {
         background: #41d395;
+        box-shadow: inset 0px 0px 0px 2px #fff;
       }
 
       label {
