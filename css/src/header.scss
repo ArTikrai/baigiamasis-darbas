@@ -26,6 +26,15 @@ header {
           &:not(:last-child) {
             margin-right: 45px;
           }
+          // a {
+          //   text-decoration: none;
+          //   color: #fff;
+          //   opacity: 0.6;
+          //   transition: 0.3s ease-in-out;
+
+          //   &:hover {
+          //       opacity: 1;
+          //     }
         }
       }
     }

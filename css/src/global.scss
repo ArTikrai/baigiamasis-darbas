@@ -4,6 +4,7 @@
 }
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -32,4 +33,15 @@ p {
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
+}
+
+@keyframes tab-reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
