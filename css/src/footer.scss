@@ -1,3 +1,34 @@
 footer {
-  background: pink;
+  background: #1c1c1c;
+
+  .container {
+    padding: 50px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+
+    .ico1,
+    .ico2,
+    .ico3,
+    .ico4 {
+      height: 20px;
+    }
+
+    .ico1 {
+      width: 11px;
+    }
+    .ico2 {
+      width: 20px;
+    }
+    .ico3 {
+      width: 24px;
+    }
+    .ico4 {
+      width: 16px;
+    }
+
+    span {
+      font-size: 1.8rem;
+      color: #707070;
+    }
+  }
 }

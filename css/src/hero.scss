@@ -97,11 +97,14 @@
     }
     .after {
       margin-bottom: 35px;
-    }
-    input {
+      padding-left: 10px;
       border: none;
+      border-bottom: 1px solid #8c8c8c;
+      width: 250px;
 
-      text-decoration: underline;
+      &::placeholder {
+        color: #cbcbcb;
+      }
     }
   }
   .form-box {
@@ -110,14 +113,6 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-
-    span {
-      display: inline-block;
-      width: 100px;
-      height: 1px;
-
-      background-color: #d8d8d8;
-    }
 
     .form-row {
       display: flex;
@@ -160,6 +155,7 @@
 
   .get-started {
     background-color: #41d395;
+    border: none;
     font-size: 18px;
     padding-bottom: 20px;
     border-bottom-left-radius: 10px;
