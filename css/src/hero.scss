@@ -139,11 +139,15 @@
       label {
         text-transform: uppercase;
         cursor: pointer;
+        position: relative;
+        margin-left: 20px;
 
         &:before {
           content: "";
+          position: absolute;
           display: inline-block;
-          left: -10px;
+          left: -20px;
+          top: -2px;
           width: 13px;
           height: 13px;
           border-radius: 50%;

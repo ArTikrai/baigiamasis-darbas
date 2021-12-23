@@ -36,7 +36,7 @@ const swiper = new Swiper(".reviews-swiper", {
   slidesPerView: 1,
   spaceBetween: 50,
   // slidesPerGroup: 3,
-  autoHeight: true,
+  // autoHeight: true,
   loop: true,
   autoplay: {
     delay: 2000,
