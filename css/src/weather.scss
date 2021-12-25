@@ -144,3 +144,24 @@
     }
   }
 }
+@media (max-width: 390px) {
+  .weather {
+    .contact-row {
+      margin-right: 0;
+    }
+    .contact-box {
+      // max-width: 230px;
+
+      form {
+        input {
+          margin-right: 0;
+
+          &:not(:last-child) {
+            max-width: 150px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

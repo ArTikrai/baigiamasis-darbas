@@ -33,3 +33,9 @@
     margin-right: 50px;
   }
 }
+
+@media (max-width: 400px) {
+  .icons-box img:not(:last-child) {
+    margin-right: 20px;
+  }
+}

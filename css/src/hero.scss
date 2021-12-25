@@ -176,10 +176,6 @@ input:focus {
     .hero-container {
       align-items: center;
 
-      .hero-logo {
-        margin-right: 170px;
-      }
-
       h2::after {
         left: 50%;
         right: 50%;
@@ -191,6 +187,19 @@ input:focus {
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .hero {
+    .form-box {
+      margin: 0;
+    }
+    .form-container {
+      .after {
+        width: 100%;
+      }
     }
   }
 }

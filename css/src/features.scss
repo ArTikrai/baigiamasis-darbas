@@ -97,3 +97,14 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 420px) {
+  .features {
+    .container {
+      img {
+        max-width: 200px;
+        height: 100px;
+      }
+    }
+  }
+}

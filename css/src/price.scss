@@ -136,3 +136,13 @@
     }
   }
 }
+
+@media (max-width: 400px) {
+  .pricing {
+    .pricing-row {
+      .pricing-box {
+        max-width: 230px;
+      }
+    }
+  }
+}

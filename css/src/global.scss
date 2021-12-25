@@ -45,3 +45,15 @@ p {
     transform: translateY(0);
   }
 }
+
+@media (max-width: 600px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 8px;
+  }
+}
