@@ -96,3 +96,11 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .awesome {
+    .row-icons {
+      flex-direction: column;
+    }
+  }
+}

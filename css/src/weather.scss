@@ -133,3 +133,14 @@
     }
   }
 }
+
+@media (max-width: 700px) {
+  .weather {
+    .contact-titlle {
+      text-align: center;
+    }
+    .celcius-flex {
+      justify-content: center;
+    }
+  }
+}

@@ -7,7 +7,7 @@
     align-items: center;
 
     img {
-      width: 389px;
+      max-width: 389px;
       height: 169px;
     }
 
@@ -74,5 +74,26 @@
         background-size: cover;
       }
     }
+  }
+}
+
+@media (max-width: 900px) {
+  .features {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 50px;
+
+      .right-box {
+        display: flex;
+        gap: 20px;
+        padding-left: 0;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .right-box {
+    flex-direction: column;
   }
 }

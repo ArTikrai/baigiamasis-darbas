@@ -141,3 +141,25 @@
     z-index: 1;
   }
 }
+
+@media (max-width: 1000px) {
+  .about {
+    .container {
+      flex-direction: column;
+
+      .tab-navigation {
+        ul {
+          display: flex;
+          gap: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .tab-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}

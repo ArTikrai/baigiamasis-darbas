@@ -48,7 +48,7 @@
       justify-content: flex-end;
       text-align: center;
       width: 343px;
-      height: 446px;
+      height: 100%;
 
       &.prof h4 {
         padding-bottom: 20px;
@@ -107,6 +107,31 @@
           line-height: 3;
           font-size: 1.4rem;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .pricing {
+    .pricing-options {
+      padding-bottom: 30px;
+    }
+    .pricing-row {
+      .pricing-box {
+        width: 250px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .pricing {
+    .pricing-row {
+      flex-direction: column;
+
+      .pricing-box {
+        width: 343px;
       }
     }
   }

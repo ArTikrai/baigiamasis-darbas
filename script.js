@@ -1,3 +1,5 @@
+"use strict";
+
 //
 // About section tab navigation
 //
@@ -32,7 +34,7 @@ for (let tabElement of tabNavigationElements) {
 //
 
 const swiper = new Swiper(".reviews-swiper", {
-  speed: 900,
+  speed: 2000,
   slidesPerView: 1,
   spaceBetween: 50,
   // slidesPerGroup: 3,
@@ -46,9 +48,13 @@ const swiper = new Swiper(".reviews-swiper", {
     clickable: true,
   },
   breakpoints: {
-    800: {
+    1100: {
       slidesPerView: 3,
       spaceBetween: 120,
+    },
+    700: {
+      slidesPerView: 2,
+      spaceBetween: 100,
     },
   },
 });
@@ -78,3 +84,10 @@ function getCurrentWeatherInCelsius() {
 }
 
 window.addEventListener("load", getCurrentWeatherInCelsius);
+
+// Hamburger nav
+const btn = document.querySelector(".fancy-burger");
+
+btn.addEventListener("click", () => {
+  btn.querySelectorAll("span").forEach((span) => span.classList.toggle("open"));
+});

@@ -19,3 +19,17 @@
     }
   }
 }
+
+@media (max-width: 1000px) {
+  .icons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .icons-box img:not(:last-child) {
+    margin-right: 50px;
+  }
+}
