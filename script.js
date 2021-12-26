@@ -91,3 +91,37 @@ const btn = document.querySelector(".fancy-burger");
 btn.addEventListener("click", () => {
   btn.querySelectorAll("span").forEach((span) => span.classList.toggle("open"));
 });
+
+//Form1 ,
+let vardas = document.getElementById("first-name");
+let pavarde = document.getElementById("last-name");
+let numeris = document.getElementById("phone-number");
+let started = document.getElementById("get-started");
+
+started.addEventListener("click", function () {
+  if (vardas.value && pavarde.value && numeris.value) {
+    alert("Successfully Sent");
+    vardas.value = "";
+    pavarde.value = "";
+    numeris.value = "";
+  } else {
+    alert("Do Not Leave Empty Space");
+  }
+});
+
+//Form2 ,
+let vardas2 = document.getElementById("first-name2");
+let pavarde2 = document.getElementById("last-name2");
+let numeris2 = document.getElementById("phone-number2");
+let send = document.getElementById("contact-us");
+
+send.addEventListener("click", function () {
+  if (vardas2.value && pavarde2.value && numeris2.value) {
+    alert("Successfully Sent");
+    vardas2.value = "";
+    pavarde2.value = "";
+    numeris2.value = "";
+  } else {
+    alert("Do Not Leave Empty Space");
+  }
+});
