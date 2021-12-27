@@ -41,7 +41,7 @@
 
     .pricing-box {
       @include flex-column;
-      justify-content: flex-end;
+      align-self: flex-end;
       text-align: center;
       width: 343px;
       height: 100%;
