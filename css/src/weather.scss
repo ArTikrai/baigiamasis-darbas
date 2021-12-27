@@ -1,16 +1,13 @@
 .weather {
   padding: 115px 0;
-  background: #e27866;
+  background: $primaryColor;
 
   .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center;
   }
 
   .contact-titlle {
-    color: #ffffff;
+    color: $colorThree;
     h2 {
       font-size: 3.6rem;
 
@@ -24,9 +21,9 @@
   }
   .celcius-flex {
     display: flex;
-    padding-bottom: 20px;
     align-items: center;
     align-content: center;
+    padding-bottom: 20px;
 
     h4 {
       font-size: 1.8rem;
@@ -41,7 +38,7 @@
   }
 
   .contact-box {
-    background-color: #ffffff;
+    background-color: $colorThree;
     border-radius: 8px;
     max-width: 391px;
     width: 100%;
@@ -50,7 +47,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      color: #cbcbcb;
+      color: $colorFour;
       padding: 20px 0 30px 0;
       input {
         margin-right: 40px;
@@ -66,7 +63,7 @@
         }
 
         &::placeholder {
-          color: #cbcbcb;
+          color: $colorFour;
           padding-bottom: 5px;
         }
       }
@@ -89,8 +86,8 @@
       }
 
       input:checked ~ label:before {
-        background: #41d395;
-        box-shadow: inset 0px 0px 0px 3px #fff;
+        background: $colorTwo;
+        box-shadow: inset 0px 0px 0px 3px $colorThree;
       }
 
       label {
@@ -107,7 +104,7 @@
           width: 13px;
           height: 13px;
           border-radius: 50%;
-          border: 1px solid #41d395;
+          border: 1px solid $colorTwo;
           transition: 0.3s ease-in-out;
         }
       }
@@ -122,10 +119,10 @@
     align-items: center;
 
     .send {
-      background-color: #41d395;
+      background-color: $colorTwo;
       font-size: 1.5rem;
       border-radius: 8px;
-      color: #ffffff;
+      color: $colorThree;
       text-decoration: none;
       padding: 20px 60px 20px 60px;
       margin-bottom: 40px;

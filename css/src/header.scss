@@ -12,7 +12,12 @@ header {
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
-
+    .home {
+      position: relative;
+      a {
+        @include absolute-center;
+      }
+    }
     nav {
       ul {
         list-style: none;
@@ -66,7 +71,7 @@ header {
 .rectangle {
   position: absolute;
   height: var(--rectangle-height);
-  background: #e27866;
+  background: $primaryColor;
   border-radius: var(--rectangle-radius);
   transition: transform var(--transition);
 }
@@ -104,7 +109,7 @@ header {
   right: 40px;
   width: 100px;
   border-radius: 8px;
-  background: #a37169;
+  background: $colorOne;
   opacity: 0;
   transform: scale(0);
   transform-origin: top right;
@@ -141,7 +146,7 @@ header {
   transform: scale(1);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   .dekstop-nav {
     display: none;
   }

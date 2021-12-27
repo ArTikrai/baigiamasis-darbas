@@ -17,20 +17,17 @@
 
       transform: translate(-50%, -50%);
       width: 64px;
-      border-bottom: 2px solid #6696e2;
+      border-bottom: 2px solid $colorSix;
     }
   }
 
   .swiper-slide {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-self: flex-end;
   }
 
   .swiper-wrapper {
     display: flex;
-    // justify-content: flex-end;
-    // align-content: flex-end;
   }
 
   .reviews-swiper {
@@ -38,14 +35,14 @@
       user-select: none;
 
       .text {
-        background-color: #6696e2;
+        background-color: $colorSix;
         border-radius: 8px;
         padding: 20px;
 
         p {
           font-size: 1.6rem;
           line-height: 1.375;
-          color: #fff;
+          color: $colorThree;
         }
       }
     }
@@ -59,7 +56,7 @@
         margin: 0;
         width: 10px;
         height: 10px;
-        border: 1px solid #e27866;
+        border: 1px solid $primaryColor;
         background-color: transparent;
         opacity: 1;
 
@@ -68,7 +65,7 @@
         }
 
         &-active {
-          background-color: #e27866;
+          background-color: $primaryColor;
         }
       }
     }
@@ -109,6 +106,6 @@
     left: 24px;
     transform: rotate(90deg);
     border: 10px solid transparent;
-    border-left-color: #6696e2;
+    border-left-color: $colorSix;
   }
 }

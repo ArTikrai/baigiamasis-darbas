@@ -2,9 +2,7 @@
   background-color: #1c1c1c;
   padding: 115px 0;
   .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 
     img {
       max-width: 389px;
@@ -23,7 +21,7 @@
         bottom: 30px;
         left: 0;
         width: 200px;
-        border-bottom: 2px solid #e27866;
+        border-bottom: 2px solid $primaryColor;
       }
     }
     p {
@@ -32,7 +30,7 @@
 
     h3,
     p {
-      color: #ffffff;
+      color: $colorThree;
     }
 
     .right-box {
@@ -47,15 +45,12 @@
         margin-right: 20px;
         padding: 25px;
         height: 25px;
-        background-color: #e27866;
+        background-color: $primaryColor;
         border-radius: 50%;
       }
       .features-icons.icon1::after {
         content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include absolute-center;
         width: 27px;
         height: 18px;
         background-image: url("../images/title-icon.svg");
@@ -64,10 +59,7 @@
 
       .features-icons.icon2::after {
         content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include absolute-center;
         width: 21.5px;
         height: 19px;
         background-image: url("../images/title-icon2.svg");

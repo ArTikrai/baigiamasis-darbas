@@ -1,11 +1,8 @@
 .pricing {
   padding: 115px 0;
-  background-color: #6696e2;
+  background-color: $colorSix;
   .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center;
     text-align: center;
 
     p {
@@ -14,7 +11,7 @@
   }
 
   .pricing-options {
-    color: #ffffff;
+    color: $colorThree;
     padding-bottom: 80px;
 
     h2 {
@@ -32,7 +29,7 @@
 
         transform: translate(-50%, -50%);
         width: 64px;
-        border-bottom: 2px solid #41d395;
+        border-bottom: 2px solid $colorTwo;
       }
     }
   }
@@ -43,8 +40,7 @@
     padding-top: 50px;
 
     .pricing-box {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       justify-content: flex-end;
       text-align: center;
       width: 343px;
@@ -57,7 +53,7 @@
 
     .price {
       background-color: #333333;
-      color: #ffffff;
+      color: $colorThree;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
       h2 {
@@ -81,18 +77,18 @@
       padding-top: 10px;
       width: 100%;
       height: 6px;
-      background-color: #41d395;
+      background-color: $colorTwo;
 
       &.prof {
         height: 40px;
-        color: #ffffff;
+        color: $colorThree;
         padding-bottom: 5px;
         font-size: 1.6rem;
       }
     }
 
     .list {
-      background-color: #ffffff;
+      background-color: $colorThree;
       border-bottom-left-radius: 8px;
       border-bottom-right-radius: 8px;
 
@@ -101,7 +97,7 @@
         padding-left: 0;
         list-style-type: none;
         li {
-          color: #86878b;
+          color: $colorFive;
           width: 100%;
           text-align: center;
           line-height: 3;

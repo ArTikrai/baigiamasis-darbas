@@ -1,0 +1,48 @@
+//------------------Variables------------
+
+//colors
+$primaryColor: #e27866;
+
+$colorOne: #a37169;
+
+$colorTwo: #41d395;
+
+$colorThree: #ffffff;
+
+$colorFour: #cbcbcb;
+
+$colorFive: #86878b;
+
+$colorSix: #6696e2;
+
+//------------Mixins---------------
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin absolute-center {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// @include flex-column;
+// @include flex-column-center;
+// @include flex-center;
+// @include absolute-center;

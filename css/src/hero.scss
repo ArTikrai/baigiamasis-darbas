@@ -27,8 +27,7 @@
 
   .hero-container {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 24px;
     .hero-logo {
       width: 247px;
@@ -37,7 +36,7 @@
     h2 {
       position: relative;
       font-size: 3.6rem;
-      color: #ffffff;
+      color: $colorThree;
 
       &::after {
         content: "";
@@ -50,14 +49,14 @@
     }
     p {
       font-size: 1.6rem;
-      color: #ffffff;
+      color: $colorThree;
       opacity: 0.85;
       padding-top: 40px;
       padding-bottom: 20px;
     }
     .download {
       background: none;
-      color: #ffffff;
+      color: $colorThree;
       border: 2px solid;
       font-size: 14px;
       width: 135px;
@@ -68,13 +67,12 @@
   }
 
   .form-container {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     position: relative;
     max-width: 360px;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: $colorThree;
     border-radius: 10px;
 
     h2 {
@@ -88,7 +86,7 @@
       border-top-right-radius: 10px;
 
       span {
-        color: #e69283;
+        color: $primaryColor;
       }
     }
 
@@ -104,15 +102,14 @@
       width: 250px;
 
       &::placeholder {
-        color: #cbcbcb;
+        color: $colorFour;
       }
     }
   }
   .form-box {
     margin-left: 30px;
     position: relative;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     padding: 20px;
 
     .form-row {
@@ -128,8 +125,8 @@
       }
 
       input:checked ~ label:before {
-        background: #41d395;
-        box-shadow: inset 0px 0px 0px 2px #fff;
+        background: $colorTwo;
+        box-shadow: inset 0px 0px 0px 2px $colorThree;
       }
 
       label {
@@ -147,7 +144,7 @@
           width: 13px;
           height: 13px;
           border-radius: 50%;
-          border: 1px solid #41d395;
+          border: 1px solid $colorTwo;
           transition: 0.3s ease-in-out;
         }
       }
@@ -155,7 +152,7 @@
   }
 
   .get-started {
-    background-color: #41d395;
+    background-color: $colorTwo;
     border: none;
     font-size: 18px;
     padding-bottom: 20px;
@@ -185,8 +182,7 @@ input:focus {
     }
 
     .container {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       align-items: center;
     }
   }

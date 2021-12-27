@@ -9,6 +9,9 @@
     font-size: 2rem;
     padding-bottom: 5px;
   }
+  p {
+    color: $colorFive;
+  }
 }
 
 .icons-box {
@@ -22,8 +25,7 @@
 
 @media (max-width: 1000px) {
   .icons-container {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 50px;
   }
 }

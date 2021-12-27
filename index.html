@@ -14,13 +14,16 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <title>Baigiamasis</title>
   </head>
   <body>
     <header>
       <div class="container">
-        <img src="images/logo.svg" alt="Logo" />
+        <div class="home">
+        <img src="images/logo.svg" alt="Logo"
+        /> <a href="#home"></a>  </div>
         <nav class="dekstop-nav">
           <ul>
             <li>
@@ -71,7 +74,7 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="container">
           <div class="hero-container">
             <img class="hero-logo" src="images/logo.svg" alt="Logo" />
@@ -164,7 +167,7 @@
               Quibusdam necessitatibus ut, rem illum.
             </p>
           </div>
-          <div class="icons-box">
+          <div  class="icons-box">
             <img src="images/icons1.svg" />
             <img src="images/icons2.svg" />
             <img src="images/icons3.svg" />
@@ -338,7 +341,7 @@
         </div>
       </section>
 
-      <section class="features">
+      <section class="features" id="features">
         <div class="container">
           <div>
             <img src="images/logo.svg" alt="logo" />
@@ -669,6 +672,7 @@
         </div>
       </div>
     </footer>
+  
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
